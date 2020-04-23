@@ -1,0 +1,36 @@
+body{
+    
+}
+h1{
+    padding-top: 40px;
+    font-size: 30px;
+}
+#Sym{
+   margin: 20px;
+    height: 130px;
+    width: 100px;
+    position: relative;
+   
+}
+button{
+    font: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    position: relative;
+    border-radius: 10px;
+    width: 120px;
+    font-size: medium;
+    outline-style:none;
+}
+#footer{
+    margin-top: 90px;
+    font-size: 15px;
+    align-items:relative ;
+    position: relative;
+
+}
+#h1{
+    margin: 40px;
+    position: relative;
+    width: 140px;
+    color: brown;
+}
