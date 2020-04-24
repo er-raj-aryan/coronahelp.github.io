@@ -23,6 +23,9 @@ button{
 }
 #footer{
     margin-top: 80px;
+    margin-bottom: 0px;
+    text-align: end;
+    text-indent: 0;
     font-size: 15px;
     align-items:relative ;
     position: relative;
