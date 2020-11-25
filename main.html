@@ -1,225 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> Main</title>
+  <title> Covid-19 Helpdesk</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type='image/x-icon' href="https://img.icons8.com/fluent/30/000000/your-help.png">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-  <div class="container card-header" style="box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.39);">
-    <h3 class="text-center"><span><svg class="bi bi-bookmarks-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" d="M2 4a2 2 0 012-2h6a2 2 0 012 2v12l-5-3-5 3V4z" clip-rule="evenodd"/>
-      <path d="M14 14l-1-.6V2a1 1 0 00-1-1H4.268A2 2 0 016 0h6a2 2 0 012 2v12z"/>
-    </svg></span> Helpdesk for Corona</h3>
-<br>    
-<nav class="navbar navbar-expand-md m-0 bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Helpdesk</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-center text-uppercase" href="index.html">Back</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-center text-uppercase" href="info.html">Information</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-center text-uppercase" href="about.html">About</a>
-        </li>
-       </ul>
-    </div>  
-  </nav>
-  <br>
 
-
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#home"><svg class="bi bi-house-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
-        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 011.414 0l6.647 6.646a.5.5 0 01-.708.708L8 2.207 1.354 8.854a.5.5 0 11-.708-.708L7.293 1.5z" clip-rule="evenodd"/>
-      </svg> Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu1">
-        <svg class="bi bi-archive-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM6 7a.5.5 0 000 1h4a.5.5 0 000-1H6zM.8 1a.8.8 0 00-.8.8V3a.8.8 0 00.8.8h14.4A.8.8 0 0016 3V1.8a.8.8 0 00-.8-.8H.8z" clip-rule="evenodd"/>
-          </svg> Food</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu2">
-        <svg class="bi bi-bell-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 16a2 2 0 002-2H6a2 2 0 002 2zm.995-14.901a1 1 0 10-1.99 0A5.002 5.002 0 003 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
-          </svg> Essential</a>
-    </li>
-   </ul></div>
-
-  <!-- Home contact numbers -->
-  
-  <div class="tab-content ">
-    <div id="home" class="container tab-pane active ">
-    
-      <div class="container p-3 my-3 bg-primary text-white rounded-lg">
-        <h3 class="text-center card-text">Contact Number's to Get Help from Corona<hr>
-        </h3>
-        <ul class="list-group">
-          <li class="list-group-item text-black-50  d-flex justify-content-between align-items-center rounded-pill">Central Helpline Number <span class="badge badge-primary badge-pill">+91-11-23978046</span></li>
-        </ul>
-      <br>
-            
-      <div>
-        <ul class="list-group rounded-pill">
-          <li class="list-group-item text-white text-lg-center font-weight-bolder   d-flex justify-content-between align-items-cente bg-dark">States <span >Helpline no.</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between  align-items-center">Andhra Pradesh <span class="font-weight-bold">0866-2410978</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Arunachal Pradesh <span class="font-weight-bold">9436055743</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Assam <span class="font-weight-bold">6913347770</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Bihar <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Chhattisgarh <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark d-flex justify-content-between align-items-cente">Goa <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Gujarat <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Haryana <span class="font-weight-bold">8558893911</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Himachal Pradesh  <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Jharkhand <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Karnataka <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Kerala <span class="font-weight-bold">0471-2552056</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Madhya Pradesh <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Maharashtra <span class="font-weight-bold">020-26127394</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Manipur <span class="font-weight-bold">3852411668</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Meghalaya <span class="font-weight-bold">108</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Mizoram <span class="font-weight-bold">102</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Nagaland <span class="font-weight-bold">7005539653</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Odisha <span class="font-weight-bold">9439994859</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Punjab <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Rajasthan <span class="font-weight-bold">0141-2225624</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Telangana <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Tamil Nadu  <span class="font-weight-bold">044-29510500</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Sikkim <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Tripura <span class="font-weight-bold">0381-2315879</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Uttarakhand <span class="font-weight-bold">104</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">Uttar Pradesh <span class="font-weight-bold">18001805145</span></li>
-          <li class="list-group-item text-dark  d-flex justify-content-between align-items-cente">West Bengal <span class="font-weight-bold">1800313444222, 03323412600,</span></li>
-        </ul>
-      </div><br><hr>
-   
-     
-     
-         <div>
-              <ul class="list-group">
-                <li class="list-group-item font-weight-bolder text-white bg-dark d-flex justify-content-between align-items-center">
-                  Union Territory (UT) <span >Helpline Nos.</span> </li>
-        <li class="list-group-item text-dark d-flex justify-content-between align-items-center">
-          Andaman and Nicobar Islands<span class="font-weight-bold ">03192-232102
-          </span>
-        </li>
-        <li class="list-group-item text-dark d-flex justify-content-between align-items-center">
-          Chandigarh <span class="font-weight-bold">9779558282</span>
-        </li>
-        <li class="list-group-item text-dark d-flex justify-content-between align-items-center">
-          Dadra and Nagar Haveli and Daman & Diu
-          <span class="font-weight-bold">104</span>
-        </li>
-        <li class="list-group-item text-dark d-flex justify-content-between align-items-center">
-          Delhi
-          <span class="font-weight-bold">011-22307145</span>
-        </li>
-        <li class="list-group-item text-dark d-flex justify-content-between align-items-center">
-          Jammu & Kashmir           <span class="font-weight-bold">01912520982, 0194-2440283</span>
-        </li>
-        <li class="list-group-item text-dark d-flex justify-content-between align-items-center">
-          Ladakh          <span class="font-weight-bold">01982256462
-          </span>
-        </li>
-        <li class="list-group-item text-dark d-flex justify-content-between align-items-center">
-          Lakshadweep          <span class="font-weight-bold">104</span>
-        </li>
-        <li class="list-group-item text-dark d-flex justify-content-between align-items-center">
-          Puducherry          <span class="font-weight-bold">104</span>
-        </li>
-        </ul>
-        <hr>
+  <!-- header helpdesk for covid-19 -->
+   <nav class=" flex-wrap bg-gray-400 p-3 bg-opacity-50 flex items-center">
+          <div class="  mr-5 uppercase font-medium tracking-wider ">
+            <a  class="flex flex-row items-center" href="index.html" >
+              <img src="https://img.icons8.com/fluent/48/000000/your-help.png"/>
+              <span class=" text-gray-800 tracking-wider uppercase font-bold text-lg"> Helpdesk </span>
+            </a>
           </div>
-  </div>
-  </div>
+            <button class=" outline-none border-0 mr-5 p-3 ml-auto rounded-md hover:bg-gray-500 lg:hidden nav-toggler " data-target="#navigation" >
+              <img src="https://img.icons8.com/material-outlined/24/000000/menu.png"/>
+            </button>
+          <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto   mr-5 items-center " id="navigation">
+            <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col">
+            <a href="main.html"  class="lg:inline-flex lg:w-auto px-3  py-2 rounded text-gray-800 tracking-wider uppercase font-medium hover:bg-gray-500">HelpLine Numbers</a>
+            <a href="info.html"  class="lg:inline-flex lg:w-auto px-3  py-2 rounded text-gray-800 tracking-wider uppercase font-medium hover:bg-gray-500">Information</a>
+            <a href="about.html" class="lg:inline-flex lg:w-auto px-3  py-2 rounded text-gray-800 tracking-wider uppercase font-medium hover:bg-gray-500">About</a>       
+           </div>
+          </div>    
+        </nav>
+  
+
+ 
+
+
+  <!-- contact numbers of state -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-3 py-24 mx-auto ">
+     
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Covid-19 Helpdesk</h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <!-- <img class="lg:w-1/2 w-full leading-relaxed text-base" src="https://media.flaticon.com/dist/min/img/landing/coronavirus/hero.png"/> -->
+        <p class="lg:w-1/2 w-full leading-relaxed text-base">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.
+
+        </p>
+      </div>
+
+      <div class="flex flex-wrap mt-4">
+
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Andhra Pradesh">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Andhra Pradesh</h2>
+            <p class="mt-1">0866-2410978</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a  style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Arunachal Pradesh">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Arunachal Pradesh</h2>
+            <p class="mt-1">9436055743</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Assam">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Assam</h2>
+            <p class="mt-1">6913347770</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Bihar">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Bihar</h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Chhattisgarh">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Chhattisgarh
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Goa">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Goa
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Gujarat">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Gujarat
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Haryana">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Haryana
+            </h2>
+            <p class="mt-1">8558893911</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Himachal Pradesh">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Himachal Pradesh
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Jharkhand">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Jharkhand
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Karnataka">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Karnataka
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);"  class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Kerala">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Kerala
+            </h2>
+            <p class="mt-1">0471-2552056</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Madhya Pradesh">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Madhya Pradesh
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Maharashtra">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Maharashtra
+            </h2>
+            <p class="mt-1">020-26127394</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Manipur">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Manipur
+            </h2>
+            <p class="mt-1">3852411668</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Meghalaya">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Meghalaya</h2>
+            <p class="mt-1">108</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Mizoram">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Mizoram
+            </h2>
+            <p class="mt-1">102</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Nagaland">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Nagaland
+            </h2>
+            <p class="mt-1">7005539653</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Odisha">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Odisha
+            </h2>
+            <p class="mt-1">9439994859</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Punjab">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Punjab
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Rajasthan">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Rajasthan
+            </h2>
+            <p class="mt-1">0141-2225624</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Telangana">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Telangana
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Tamil Nadu">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Tamil Nadu
+            </h2>
+            <p class="mt-1">044-29510500</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Sikkim">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Sikkim
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Tripura">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Tripura
+            </h2>
+            <p class="mt-1">0381-2315879</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Uttarakhand">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Uttarakhand</h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Uttar Pradesh">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Uttar Pradesh
+            </h2>
+            <p class="mt-1">18001805145</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?West Bengal">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">West Bengal
+            </h2>
+            <p class="mt-1">1800313444222, 03323412600</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Andaman and Nicobar Islands">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Andaman and Nicobar Islands
+            </h2>
+            <p class="mt-1">03192-232102</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Chandigarh">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Chandigarh
+            </h2>
+            <p class="mt-1">9779558282</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Nagar">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Dadra and Nagar Haveli and Daman & Diu
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Delhi">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Delhi
+            </h2>
+            <p class="mt-1">011-22307145</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Jammu & Kashmir">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Jammu & Kashmir
+            </h2>
+            <p class="mt-1">01912520982, 0194-2440283</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Ladakh">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Ladakh
+
+            </h2>
+            <p class="mt-1">01982256462</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);"class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Lakshadweep">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Lakshadweep
+
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://source.unsplash.com/428x268/?Puducherry">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Helpline Number</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">Puducherry
+
+            </h2>
+            <p class="mt-1">104</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!--end section-->
 
 
 
-
-
-    <!--Food Section-->
-      <div id="menu1" class="container tab-pane fade">
-      <div class="container  p-3 my-3  bg-primary text-white rounded-lg">
-        <h3 class=" text-center">Food</h3><hr/> 
-        <ul class="list-group">
-           <li class="list-group-item text-white text-center d-flex justify-content-between align-items-center  bg-dark">Food Helpline Number</li>
-           <li class="list-group-item text-dark d-flex justify-content-between align-items-center ">Toll Free Number<span>1950</span></li>
-         </ul>
-         <hr>
-      </div>
-     </div>
-     <!-- end of section-->
   
   <!--Esential Section-->
-    <div id="menu2" class="container tab-pane fade ">
-      <div class="container  p-3 my-3 bg-primary text-white rounded-lg"><br>
-      <h3 class="text-center">Essential Section :-</h3><hr>
-      <p>Don’t believe everything you hear. There are always three sides to a story: yours, theirs and the truth.</p>
-       <div>
-        <ul class="list-group">
-          <li class="list-group-item text-dark font-weight-bolder d-flex text-wrap justify-content-between align-items-center">WHO :- <span><a href="https://api.whatsapp.com/send?phone=417989318926&text=&source=&data=&app_absent="><button  class="btn btn-success">WhatsApp Number</button></a></span></li>
-          <li class="list-group-item text-dark font-weight-bolder d-flex text-wrap justify-content-between align-items-center">India :- <span><a href="https://api.whatsapp.com/send?phone=919013151515&text=&source=&data=&app_absent="><button  class="btn btn-success">WhatsApp Number</button></a></span></li>
-          </ul>
-            </div><br>
-        <div class=" container-md text-wrap">
-          <h3>IFCN Fact Checking Organizations on WhatsApp :-</h3><hr>
-            <p>
-            WhatsApp cares deeply about the safety of our users and we continue to focus on preventing misinformation. If the information you receive sounds suspicious or inaccurate, we encourage you to double-check information with these official IFCN Fact Checking Organizations:
-           </p>
-
-       <!--WhatsApp Number For verify News-->
-       
-            <ul class="list-group">
-              <li class="list-group-item bg-dark text-center text-white-50 ">Indian Number for Cheak the Reality Of News</li>
-              <li class="list-group-item bg-danger text-center text-white-50 d-flex justify-content-between align-items-center">Organizations<span>WhatsApp Number</span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">AFP <span><a href="https://api.whatsapp.com/send?phone=917370007000&text=&source=&data=&app_absent=">+91-7370007000</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Alt News<span><a href="https://api.whatsapp.com/send?phone=919825255790&text=&source=&data=&app_absent=">+91-9825255790</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Boom<span><a href="https://api.whatsapp.com/send?phone=917700906111&text=&source=&data=&app_absent=">+91-7700906111  </a></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Digit Eye<span><a href="https://api.whatsapp.com/send?phone=919632830256&text=&source=&data=&app_absent=">+91-9632830256</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Fact Crescendo - Hindi<span><a href="https://api.whatsapp.com/send?phone=919049053770&text=&source=&data=&app_absent=">+91-9049053770</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Fact Crescendo - Malayalam<span><a href="https://api.whatsapp.com/send?phone=919049046809&text=&source=&data=&app_absent=">+91-9049046809</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Fact Crescendo - Marathi<span><a href="https://api.whatsapp.com/send?phone=919049043487&text=&source=&data=&app_absent=">+91-9049043487</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Factly<span><a href="https://api.whatsapp.com/send?phone=919603132132&text=&source=&data=&app_absent=">+91-9603132132</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">India Today<span><a href="https://api.whatsapp.com/send?phone=917370007000&text=&source=&data=&app_absent=">+91-7370007000</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Newschecker<span><a href="https://api.whatsapp.com/send?phone=919999499044&text=&source=&data=&app_absent=">+91-9999499044</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Newsmobile<span><a href="https://api.whatsapp.com/send?phone=918826800707&text=&source=&data=&app_absent=">+91-8826800707</a></span></li>
-              <li class="list-group-item text-dark  d-flex justify-content-between align-items-center">Vishvas News<span><a href="https://api.whatsapp.com/send?phone=919205270923&text=&source=&data=&app_absent=">+91-9205270923</a></span></li>
-              </ul>
-              <hr>
+  <section class="text-gray-700 body-font">
+    <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Essential Section</h1>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full"  src="https://www.sundayguardianlive.com/wp-content/uploads/2020/04/Kundan-WHO-reforms-edited_WHO.jpg">
           </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">WHO </h2>
+          <p class="leading-relaxed text-base">WhatsApp cares deeply about the safety of our users and we continue to focus on preventing misinformation. If the information you receive sounds suspicious or inaccurate,
+             we encourage you to double-check information with these official IFCN Fact Checking Organizations</p>
+          <button class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-300 rounded"><img src="https://img.icons8.com/fluent/30/000000/whatsapp.png"/> WhatsApp</button>
+        </div>
+        <div class="sm:w-1/2 mb-10 px-4">
+          <div style="box-shadow: 2px 5px 10px rgba(0,0,0,0.5);" class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png">
+          </div>
+          <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">India </h2>
+          <p class="leading-relaxed text-base">WhatsApp cares deeply about the safety of our users and we continue to focus on preventing misinformation. If the information you receive sounds suspicious or inaccurate, 
+            we encourage you to double-check information with these official IFCN Fact Checking Organizations</p>
+          <button class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-300 rounded"><img src="https://img.icons8.com/fluent/30/000000/whatsapp.png"/> WhatsApp</button>
+        </div>
       </div>
-      </div>
-    <!--end of section-->
+    </div>
+  </section>
 
-</div>
-<!--end of tab section-->
-
-
+  
+<!-- javascript and jquery section -->
+<script src="js/jquery.min.js"> </script> 
+<script src="js/scripts.js"> </script> 
 </body>
-<footer class="page-footer font-small blue">
-
-  <!-- Copyright -->
-  <div class="text-center py-3 container  card-footer " >© 2020 Copyright:All Rights Reserved<br>Developed By:-Raj Aryan
-   <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>-->
+<footer class="text-gray-700 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <img src="https://img.icons8.com/fluent/40/000000/your-help.png"/>
+      <span class="ml-3  uppercase font-medium tracking-wider text-sm">Covid-19 Helpdesk</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Raj Aryan —
+      <a href="http://www.covid19help.tk/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@COVID-19 HELP</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500 hover:text-blue-600">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500 hover:text-blue-600">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500 hover:text-red-600">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500 hover:text-blue-600" href="https://www.linkedin.com/in/raj-aryan-008786118/">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
   </div>
-  <!-- Copyright -->
-
 </footer>
-<!-- Footer -->
 </html>
