@@ -15,10 +15,10 @@ const date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear()
 
 function getData(){ 
     const pin = parseInt(document.getElementById('pinCode').value)
-    console.log(pin);
-    console.log(date);
+    console.log('Thanks for visiting my site ... ');
+    
 
-    url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode='+pin+'&date='+date+''
+    url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode='+pin+'&date='+date+'';
     fetch(url).then((res) => {
     return res.json();
     }).then((data) => {

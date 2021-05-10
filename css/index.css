@@ -40,25 +40,26 @@ body{
 }
 #table-data{
     color:rgba(71, 69, 69, 0.822);
-    margin:10px;
+    /* margin:10px; */
     font-family: 'Poppins', sans-serif !important;
     font-weight: 700;
-    border: 1px solid rgb(226, 225, 223);
-    background: rgba(255 ,255, 255, 0.1);
+    /* border: 1px solid rgb(226, 225, 223); */
+    border-radius: 10px;
+    background: rgba(238, 236, 236, 0.972);
     user-select: none;
 }
 
 #pinCode{
-    width:40vh;
+    width:25vh;
     outline: none;
     font-family: 'Poppins', sans-serif;
     border-top: 1px solid rgb(226, 225, 223);
     border-left: 1px solid rgb(226, 225, 223);
-    background: rgba(255 ,255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.883);
 }
 
 .btn{
-    width:20vh;
+    width:15vh;
     margin-left: 20px;
     outline: none;
     font-family: 'Poppins', sans-serif;

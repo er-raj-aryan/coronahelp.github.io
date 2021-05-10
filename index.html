@@ -69,6 +69,8 @@
     </div>
   </section>
 
+  
+
   <!-- indian facility -->
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
@@ -104,19 +106,24 @@
   </section>
 
   <!-- vaccine table -->
-  <section class="text-gray-600 body-font" id='v1'>
-    <div class="container px-5 py-8 mx-auto">
+  <section class="text-gray-600 body-font bg-indigo-300"  id='v1'>
+    <div class="container px-5 py-32 text-center mx-auto">
       <div class="flex flex-col text-center items-center w-full mb-12">
         <h1 class="sm:text-4xl text-3xl font-medium title-font  mb-2 text-gray-900">Vaccine Information</h1>
         <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-6"></div>
-        <div class='flex mt-3 '>
-          <input  id="pinCode" placeholder="Please enter pincode" class='text-gray-900  text-base border-2 rounded-md placeholder-opacity-10 p-2 '  />
-          <button type='submit' onClick='getData()'  class='btn border-2 text-white bg-indigo-500 focus:outline-none hover:bg-indigo-600 rounded rounded-md p-1 bg-gradient-to-r from-green-400 to-blue-500 tracking-wider'>Search</button>
+        <p class="text-base tracking-wide ">Check your nearest vaccination center and slots availability</p>
+        <div class='flex mt-6 '>
+          <input  id="pinCode" placeholder="Pincode" class=' text-base border-2 rounded-md placeholder-opacity-10 p-2 '  />
+          <button type='submit' onClick='getData()'  class='btn border-2 text-white  focus:outline-none hover:bg-indigo-600 rounded rounded-md p-1 bg-gradient-to-r from-green-400 to-blue-500 tracking-wider'>Search</button>
       </div>
+      <div class='flex text-center mt-6 content-center ' >
+      <a class='text-center text-indigo-500 mt-6 w-full' target="_blank" href="https://selfregistration.cowin.gov.in/">Register/ Sign In yourself</a>
+     
+    </div>
       </div>
       
-      <div class="lg:w-2/3 w-full mx-auto overflow-auto">
-        <table class="table-auto w-full text-left whitespace-no-wrap">
+      <div class="lg:w-2/3 w-full  mx-auto overflow-auto">
+        <table id="table-data" class="  table-auto w-full text-left whitespace-no-wrap">
           <thead>
             <tr>
               <th class="px-4 py-3 font-serif tracking-wider font-medium text-gray-900 text-lg bg-gray-100 rounded-tl rounded-bl">Name</th>
@@ -129,12 +136,12 @@
             </tr>
           </thead>
           <tbody id='content'>
-           
           </tbody>
         </table>
+        
       </div>
-      
     </div>
+    
   </section>
 
    <!-- Testimonial -->
