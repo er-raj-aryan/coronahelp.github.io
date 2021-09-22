@@ -1,5 +1,3 @@
-# coronahelp.github.io
-
 <h1>HelpDesk for Covid-19</h1>
 
 <p>I developed this site to help people </p>
